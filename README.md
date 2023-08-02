@@ -8,3 +8,6 @@ SO THAT my company can compete with other e-commerce companies
 ```
 # Installation
 
+* MySQL
+* Sequelize
+* Dontev
