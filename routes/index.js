@@ -1,10 +1,15 @@
+// api variable that requires api folder
+const apiR = require('./api');
+
+// router vaiable that requires express
 const router = require('express').Router();
-const apiRoutes = require('./api');
 
-router.use('/api', apiRoutes);
 
+router.use('/api', apiR);
+
+// in case route error
 router.use((req, res) => {
-  res.send("<h1>Wrong Route!</h1>")
+  res.send("<h1>error</h1>")
 });
 
 module.exports = router;
